@@ -207,7 +207,7 @@ class MainWindowUser(QMainWindow, Ui_MainWindow):
             self.line_surname_2.setText(data[1])
             self.line_phone_2.setText(data[3])
             self.pushButton.setText(data[2])
-            self.line_email_2.setText(data_email[0])
+            self.line_email_2.setText(data_email)
             if data[4] == 1:
                 self.radioButton.setChecked(True)
             elif data[4] == 2:

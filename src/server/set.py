@@ -6,10 +6,6 @@ email_list_admin = [
     'admin3@gmail.com',
     'admin4@gmail.com',
     'admin5@gmail.com',
-    'admin5',
-    'admin6',
-    'admin7',
-    'admin8',
 ]
 email_list_pilot = [
     'pilot1@gmail.com',

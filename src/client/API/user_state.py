@@ -10,7 +10,6 @@ def get_user_state(id_):
     else:
         return None
 
-# print(get_user_state(18))
 
 def update_user_state(id_, state):
     data = {"user_id": id_, "state": state}
@@ -19,11 +18,8 @@ def update_user_state(id_, state):
     return post_data
 
 
-# print(update_user_state(1, 'y'))
-
 def insert_user_state(user_id, state):
     data = {"user_id": user_id, "state": state}
     response = requests.post('http://127.0.0.1:8000/user_state/state', json=data)
     post_data = response.json()
     return post_data
-# print(insert_user_state(1,'No'))

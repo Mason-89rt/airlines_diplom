@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from PyQt5.QtWidgets import QApplication, QDialog, QMessageBox
 from PyQt5.QtGui import QRegularExpressionValidator
 from PyQt5.QtCore import QRegularExpression
@@ -8,18 +11,13 @@ from API.user_getpass import post_user_getpass, get_user_getpass_name, get_user_
 from API.passenger import post_personal_id
 from API.staff import post_personal_staff_id
 from API.user_state import get_user_state, update_user_state, insert_user_state
-import sys
-import os
-print(sys.path)
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-
 from src.server.set import email_list_admin, email_list_intern, email_list_pilot, email_list_engineer
 from modules.main_window import MainWindow
 from modules.main_window_user import MainWindowUser
 import getpass
 import re
 
-
+print(sys.path)
 
 
 class MyDialog(QDialog, Ui_Dialog):

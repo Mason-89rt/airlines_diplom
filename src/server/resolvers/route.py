@@ -1,4 +1,4 @@
-from endpoints.models import Directive
+from endpoints.models import Directive, DirectiveFromTo
 from db.DBmanager import base_manager
 
 
@@ -11,4 +11,12 @@ def get_route(directive: Directive):
                                AND directive.to_directive = ?
                                and date_route.date_start = ?""",
                                args=(directive.from_directive, directive.to_directive, directive.date_))
+    return res
+
+
+def route_exist(directive: DirectiveFromTo):
+    res = base_manager.execute("""SELECT * FROM directive 
+                               WHERE directive.from_directive = ?
+                               AND directive.to_directive = ?""",
+                               args=(directive.from_directive, directive.to_directive))
     return res

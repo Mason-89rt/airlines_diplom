@@ -189,6 +189,13 @@ def update_user(id_, login, password, email, role_id):
     return response
 
 
+def new_user(login, password, email, id_):
+    data = {"login": login, "password": password, "email": email, "id": id_}
+    response = requests.post(f'http://127.0.0.1:8000/users_start/new_user', json=data)
+    post_data = response.json()
+    return post_data
+
+
 def update_user_role(id_, role_id):
     data = {"id": id_, "role_id": role_id}
     response = requests.put(f'http://127.0.0.1:8000/users_start/user_update_role', json=data)

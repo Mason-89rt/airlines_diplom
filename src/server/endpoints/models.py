@@ -499,14 +499,6 @@ class DirectiveShow(BaseModel):
     id: int
     from_directive: str
     to_directive: str
-# class Directive_(BaseModel):
-#     from_directive: str
-#     to_directive: str
-#     date_: date
-#     class_: str
-#     price: int
-#     time_: time
-
 
 
 class DirectiveFromTo(BaseModel):

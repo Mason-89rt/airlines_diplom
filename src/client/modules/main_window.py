@@ -12,6 +12,7 @@ from PyQt5.QtGui import QFont
 from PyQt5 import QtCore, QtWidgets
 from generated.main_window_ui import Ui_MainWindow
 from API.staff import get_staff_profile, get_staff_info, update_staff_info
+from API.user import get_email
 from API.user_state import update_user_state
 from PyQt5.QtWidgets import QWidget, QMainWindow
 from generated.calendar_ui import Ui_calendar
@@ -65,7 +66,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.sign_out_sideboard.clicked.connect(self.out)
         self.sign_out_sideboard_2.clicked.connect(self.out)
 
-        self.comboBox_2.addItems(["Классы билетов", "Пользователи", "Персонал", "Маршрут", "Авиакомпании",
+        self.comboBox_2.addItems(["Классы билетов", "Персонал", "Маршрут", "Авиакомпании",
                                   "Коэффициенты", "Безопасность", "Рейсы"])
         self.reset_selection()
 
@@ -148,11 +149,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.data_display_functions = {
             "Сотрудники": (26, staff_show.show_data_staff),
             "Зарплата": (27, salary_show.show_data_salary),
-            "Пользователи": (28, user_show.show_data_user),
+            #"Пользователи": (28, user_show.show_data_user),
             "Роль": (14, role_show.show_data_role),
-            "Класс": (18, class_show.show_data_class),
+            #"Класс": (18, class_show.show_data_class),
             "Направление": (11, directive_show.show_data_directive),
-            "Пол": (7, gender_show.show_data_gender),
+            #"Время": (7, gender_show.show_data_gender),
             "Коэффициенты": (15, date_coefficient_show.show_data_date_coefficient),
             "Рейс": (22, flights_show.show_data_flights),
         }
@@ -176,24 +177,24 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.comboBox.clear()
         if self.comboBox_2.currentText() == "Рейсы":
             self.comboBox.addItems(["Рейс", "Выход", "Время посадки", "Статус рейса"])
-        if self.comboBox_2.currentText() == "Клиенты":
-            self.comboBox.addItems(["Пассажиры", "Оплата"])
-        if self.comboBox_2.currentText() == "Пользователи":
-            self.comboBox.addItems(["Пользователи"])
+        if self.comboBox_2.currentText() == "Пассажиры":
+            self.comboBox.addItems(["Пассажиры"])
+        #if self.comboBox_2.currentText() == "Пользователи":
+        #    self.comboBox.addItems(["Пользователи"])
         if self.comboBox_2.currentText() == "Персонал":
             self.comboBox.addItems(["Сотрудники", "Зарплата"])
         if self.comboBox_2.currentText() == "Безопасность":
             self.comboBox.addItems(["Роль"])
-        if self.comboBox_2.currentText() == "Воздушный транспорт":
-            self.comboBox.addItems(["Самолет", "Статус самолета", "Производитель", "Регистрационный номер", "Модель"])
-        if self.comboBox_2.currentText() == "Классы билетов":
-            self.comboBox.addItems(["Класс", "Подкласс", "Описание подкласса", "Цена подкласса"])
-        if self.comboBox_2.currentText() == "Билеты":
-            self.comboBox.addItems(["Билет", "Место"])
+        #if self.comboBox_2.currentText() == "Воздушный транспорт":
+        #    self.comboBox.addItems(["Самолет", "Статус самолета", "Производитель", "Регистрационный номер", "Модель"])
+        #if self.comboBox_2.currentText() == "Классы билетов":
+        #    self.comboBox.addItems(["Класс", "Подкласс", "Описание подкласса", "Цена подкласса"])
+        #if self.comboBox_2.currentText() == "Билеты":
+        #    self.comboBox.addItems(["Билет", "Место"])
         if self.comboBox_2.currentText() == "Маршрут":
             self.comboBox.addItems(["Направление", "Время", "Дата"])
         if self.comboBox_2.currentText() == "Авиакомпании":
-            self.comboBox.addItems(["Авиакомпании", "Информация о авиакомпании"])
+            self.comboBox.addItems(["Авиакомпании"])
         if self.comboBox_2.currentText() == "Коэффициенты":
             self.comboBox.addItems(["Коэффициенты"])
         self.comboBox.setCurrentIndex(-1)
@@ -216,15 +217,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.radioButton_2.setAutoExclusive(True)
 
     def fill_data_profile(self):
+        data_email = get_email(self.id)
         data = get_staff_profile(self.id)
-        self.line_name_2.setText(data[0])
-        self.line_surname_2.setText(data[1])
-        self.line_phone_2.setText(data[2])
-        self.pushButton.setText(data[3])
-        if data[4] == 1:
-            self.radioButton.setChecked(True)
-        elif data[4] == 2:
-            self.radioButton_2.setChecked(True)
+        if data:
+            self.line_name_2.setText(data[0])
+            self.line_surname_2.setText(data[1])
+            self.line_phone_2.setText(data[3])
+            self.pushButton.setText(data[2])
+            self.line_email_2.setText(data_email)
+            if data[4] == 1:
+                self.radioButton.setChecked(True)
+            elif data[4] == 2:
+                self.radioButton_2.setChecked(True)
+        else:
+            pass
 
     def user_data(self):
         name = self.line_name_2.text()
