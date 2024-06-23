@@ -1,0 +1,115 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>C:/Users/maksi/Downloads/1681546293_papik-pro-p-samolet-l.png</file>
+    <file>../icons/6f1ae3189013d3b19b36d1e4694114a0.jpeg</file>
+    <file>../icons/1681546293_papik-pro-p-samolet-logotip-vektor-8.png</file>
+    <file>../icons/gora-fudziyama-ochen-zavorazhivayushhe-vyglyadit.jpg</file>
+    <file>../icons/1612793546_71-p-samolet-na-golubom-fone-107.jpg</file>
+    <file>../icons/6422133670.jpg</file>
+    <file>../icons/arrow-right.png</file>
+    <file>../icons/arrow-small-left.png</file>
+    <file>../icons/back.png</file>
+    <file>../icons/bell.png</file>
+    <file>../icons/blocking.png</file>
+    <file>../icons/booking.png</file>
+    <file>../icons/bookmark.png</file>
+    <file>../icons/calendar.png</file>
+    <file>../icons/chat-box.png</file>
+    <file>../icons/check.png</file>
+    <file>../icons/clock.png</file>
+    <file>../icons/comment.png</file>
+    <file>../icons/communication.png</file>
+    <file>../icons/credit-card.png</file>
+    <file>../icons/cross.png</file>
+    <file>../icons/dark.jpg</file>
+    <file>../icons/database.png</file>
+    <file>../icons/direct-instagram.png</file>
+    <file>../icons/dropbox.png</file>
+    <file>../icons/HD-wallpaper-beautiful-beach-clouds-landscape-palms-sand-sea-sky-sunset-trees-water.jpg</file>
+    <file>../icons/heart.png</file>
+    <file>../icons/home.png</file>
+    <file>../icons/icons8-airplane-landing-64.png</file>
+    <file>../icons/icons8-airplane-take-off-50.png</file>
+    <file>../icons/icons8-airplane-take-off-64.png</file>
+    <file>../icons/icons8-big-data-50 (1).png</file>
+    <file>../icons/icons8-big-data-50.png</file>
+    <file>../icons/icons8-chat-message-50 (1).png</file>
+    <file>../icons/icons8-chat-message-50.png</file>
+    <file>../icons/icons8-home-50 (1).png</file>
+    <file>../icons/icons8-home-50.png</file>
+    <file>../icons/icons8-info-50 (1).png</file>
+    <file>../icons/icons8-info-50.png</file>
+    <file>../icons/icons8-logout-rounded-50 (1).png</file>
+    <file>../icons/icons8-logout-rounded-50.png</file>
+    <file>../icons/icons8-menu-50 (1).png</file>
+    <file>../icons/icons8-menu-50.png</file>
+    <file>../icons/icons8-notification-50 (1).png</file>
+    <file>../icons/icons8-notification-50.png</file>
+    <file>../icons/icons8-open-pane-50 (1).png</file>
+    <file>../icons/icons8-open-pane-50.png</file>
+    <file>../icons/icons8-pencil-drawing-50 (1).png</file>
+    <file>../icons/icons8-pencil-drawing-50 (2).png</file>
+    <file>../icons/icons8-pencil-drawing-50.png</file>
+    <file>../icons/icons8-plane-50 (1).png</file>
+    <file>../icons/icons8-plane-50.png</file>
+    <file>../icons/icons8-plus-24 (1).png</file>
+    <file>../icons/icons8-plus-24 (2).png</file>
+    <file>../icons/icons8-plus-24.png</file>
+    <file>../icons/icons8-refresh-30.png</file>
+    <file>../icons/icons8-search-50.png</file>
+    <file>../icons/icons8-settings-50 (1).png</file>
+    <file>../icons/icons8-settings-50.png</file>
+    <file>../icons/icons8-ticket-50.png</file>
+    <file>../icons/icons8-trash-50 (1).png</file>
+    <file>../icons/icons8-trash-50 (2).png</file>
+    <file>../icons/icons8-trash-50.png</file>
+    <file>../icons/icons8-user-50 (1).png</file>
+    <file>../icons/icons8-user-50.png</file>
+    <file>../icons/info.png</file>
+    <file>../icons/instagram.png</file>
+    <file>../icons/instagram-post.png</file>
+    <file>../icons/left-arrow.png</file>
+    <file>../icons/list.png</file>
+    <file>../icons/logout.png</file>
+    <file>../icons/machine.png</file>
+    <file>../icons/menu-burger.png</file>
+    <file>../icons/pencil.png</file>
+    <file>../icons/picture.png</file>
+    <file>../icons/plane-alt.png</file>
+    <file>../icons/plane-arrival.png</file>
+    <file>../icons/plane-departure.png</file>
+    <file>../icons/refresh.png</file>
+    <file>../icons/reply-message.png</file>
+    <file>../icons/save-instagram (1).png</file>
+    <file>../icons/save-instagram.png</file>
+    <file>../icons/search.png</file>
+    <file>../icons/send.png</file>
+    <file>../icons/settings (1).png</file>
+    <file>../icons/settings.png</file>
+    <file>../icons/share.png</file>
+    <file>../icons/social.png</file>
+    <file>../icons/telegram (1).png</file>
+    <file>../icons/telegram (2).png</file>
+    <file>../icons/telegram (3).png</file>
+    <file>../icons/telegram (4).png</file>
+    <file>../icons/telegram.png</file>
+    <file>../icons/ticket-airline.png</file>
+    <file>../icons/ticket-alt.png</file>
+    <file>../icons/user (1).png</file>
+    <file>../icons/user (2).png</file>
+    <file>../icons/user.png</file>
+    <file>../icons/vk.png</file>
+    <file>../icons/vkontakte.png</file>
+    <file>../icons/youtube.png</file>
+    <file>../icons/menu-burger.png</file>
+    <file>../icons/calendar.png</file>
+    <file>../icons/icons8-refresh-30.png</file>
+    <file>../icons/icons8-search-50.png</file>
+    <file>../icons/icons8-settings-50 (1).png</file>
+    <file>../icons/icons8-settings-50.png</file>
+    <file>../icons/instagram.png</file>
+    <file>../icons/telegram (4).png</file>
+    <file>../icons/vkontakte.png</file>
+    <file>../icons/youtube.png</file>
+  </qresource>
+</RCC>
